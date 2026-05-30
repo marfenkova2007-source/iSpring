@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Memory Game</title>
+        <meta charset="UTF-8">
+        <style>
+            #startButton {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 15px 30px;
+                font-size: 20px;
+                cursor: pointer;
+                z-index: 100;
+                border: none;
+                border-radius: 25px;
+                background-color: #ff4444;
+                color: white;
+                font-weight: bold;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+            }
+            #startButton:hover {
+                background-color: #ff0000;
+                transform: translate(-50%, -50%) scale(1.05);
+            }
+            #timer {
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 36px;
+                color: white;
+                font-family: Arial;
+                text-shadow: 2px 2px 4px black;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="startButton">Начать игру</button>
+        <div id="timer">02:00</div>
+        <canvas id="canvas"></canvas>
+        <script src="./script.js"></script>
+    </body>
+</html>
